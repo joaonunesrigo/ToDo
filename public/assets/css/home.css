@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Robik , sans-serif;
+}
+
+:root{
+    --primary-color:#F0F2FA;
+    --secondary-color:#0A0040;
+    --tertiary-color:#F6F5FF;
+    --first-color: #6143ff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.sidebar{
+    width: 150px;
+    background-color: #6143ff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sidebar img{
+    max-width: 100%;
+    height: fit-content;
+}
+ nav{
+    width: calc(100vw - 150px);
+    height: 5rem;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    background-color: #6143ff;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 10rem;
+    justify-content: center;
+}
+
+.btn:hover{
+    background-color: #0A0040;
+}
+
+
+
+.main{
+display: flex;
+padding: 2rem;
+
+}
+.graph{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.data{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-size: 20px;
+    color: #0A0040;
+    font-weight: bold;
+}
+
+.graph_header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.subtitle{
+    margin-top: 1rem;
+}
+
+.graph-father{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph-placeholder{
+    width: 300px;
+    margin-top: 2rem;
+    background: url('/assets/images/graph.png');
+    background-size:contain ;
+    height: 300px;
+
+}
+.border{
+    border: solid 0.5px rgb(220, 220, 220);
+    width: 15rem;
+    height: fit-content;
+}
+
+
+
+.list{
+    width: 100%;
+
+}
+
+.tesk-list{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.task-left{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.item{
+    padding: 30px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    transition: all .3s ease-in;
+
+
+}
+
+.item:hover{
+        transform: scale(1.02);
+}
+
+
+.actions a{
+    margin-left: 2rem;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+select{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.item:hover{
+    background-color: rgb(96, 109, 180)
+}
+.item-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.sphere{
+    background-color: rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.priority{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+}
+
+h3{
+    margin-left: 2rem;
+}
+
+.graph-father{
+    margin-top: 10rem;
+}
